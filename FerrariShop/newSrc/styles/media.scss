@@ -1,0 +1,635 @@
+@media (max-width: 1366px) {
+    .header-wrapper {
+        gap: 5%;
+    }
+    .wrapper-block {
+        width: 1070px;
+    }
+
+    .main-wrapper {
+        width: 1070px;
+    }
+
+    .ul-block {
+        width: 1070px;
+        justify-content: center
+    }
+
+    .block-possition {
+        justify-content: center;
+
+    }
+
+    .bue-car-wrapper {
+        width: 1050px;
+        margin: 0 auto;
+    }
+
+    .bue-car-card {
+        width: 782px;
+        margin: 10px;
+    }
+
+    .btn-request-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .btn-request {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .benefit-section {
+        width: 1050px;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 25px;
+    }
+
+    .benefit-cards {
+        width: 500px;
+        margin-top: 0px;
+    }
+
+    .text-wrapper{
+        font-size: 18px;
+    }
+
+    .cards-text {
+        font-size: 18px;
+    }
+
+    .footer {
+        width: 1050px;
+        margin: 0 auto;
+
+    }
+
+    .social-card {
+        margin-left: 230px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .wrapper-block {
+        width: 760px;
+    }
+
+    .btn-style {
+        width: 670px;
+    }
+
+    .main-wrapper {
+        width: 760px;
+    }
+
+    .ul-block {
+        width: 760px;
+        justify-content: center
+    }
+
+    .bue-car-wrapper {
+        width: 760px;
+    }
+
+     .benefit-section {
+        width: 750px;
+    }
+
+    .bg-img {
+        background-image:none;
+    }
+
+    .benefit-cards {
+        width: 360px;
+        border: 1px solid gray;
+    }
+
+    .footer {
+        width: 760px;
+        margin: 0 auto;
+    }
+
+    .social-card {
+        margin-left: 200px;
+    }
+
+    .footer {
+        width: 760px;
+        margin: 0 auto;
+    }
+
+    .footer-contacts {
+        width: 400px;
+        flex-direction: column;
+    }
+
+    .specificity-wrapper {
+        width: 760px;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .footer-logo-and-nav {
+        height: 190px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer-menu {
+        width: 230px;
+    }
+
+    .adres-wrapper {
+        width: 400px;
+        margin-top: 30px;
+    }
+
+    .specificity-card {
+        width: 160px;
+        grid-template-columns: 15px 30px 100px auto;
+    }
+
+    .tooltip {
+        left: 130px;
+    }
+
+    .social-card {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-wrapper {
+        width: 95%;
+    }
+
+    .header-nav-list {
+        padding-left: 5px;
+        padding-right: 5px;
+        z-index: 3;
+    }
+
+    .background-blur {
+        font-size: 11px;
+    }
+
+    .wrapper-block {
+        width: 480px;
+    }
+
+    .btn-style {
+        width: 480px;
+    }
+
+    .main-wrapper {
+        width: 480px;
+    }
+
+    .backet_click {
+        top: 760px;
+        right: 30px;
+    }
+
+
+    .ul-block {
+        width: 460px;
+    }
+
+    .block-possition {
+        width: 480px;
+    }
+
+    .bue-car-wrapper {
+        width: 460px;
+    }
+
+    .contact {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .callback {
+        width: 410px;
+    }
+
+    .callback-gr-wrapper {
+        grid-template-columns: repeat(1, auto);
+        justify-items: center;
+    }
+
+    .grid-position-Comment {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .grid-position-check {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .grid-position-button {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    .bue-car-box {
+        width: 480px;
+    }
+
+    .bue-car-title {
+        max-width: 480px;
+        font-size: 28px;
+    }
+
+    .benefit-section {
+        width: 480px;
+        height: auto;
+        background-size: cover;
+    }
+
+    .bg-img {
+        background-position-x: center;
+        background-image: url(../images/card/bg-bugatti.jpeg);
+        background-repeat: no-repeat;
+    }
+
+    .open-card {
+        width: 360px;
+        height: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: normal;
+        border-radius: 10px;
+        background-color: #FFFFFFb3;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+    }
+
+    .benefit-cards {
+        height: 100px;
+        flex-wrap: nowrap;
+    }
+
+    .visible-arrow {
+        display: block;
+    }
+
+    .invisible-arrow {
+        display: none;
+    }
+
+    .cards-title {
+        font-family: "Tektur", sans-serif;
+        font-weight: 500;
+    }
+
+    .btn-detail-toggle {
+        display: block;
+        border: none;
+    }
+
+    .open-module {
+        position: relative;
+        display: block;
+    }
+
+    .close-module {
+        position: relative;
+        display: none;
+    }
+
+    .text-wrapper {
+        display: none;
+    }
+
+    .visible-text {
+        display: flex;
+        margin-left: 15px;
+        width: 340px;
+        font-family: "Tektur", sans-serif;
+        font-size: 15px;
+        opacity: 0;
+        animation: anim 1.5s forwards;
+    }
+
+    @keyframes anim {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    .cards-text {
+        display: none;
+        margin-bottom: 0px;
+    }
+
+    .footer {
+        width: 480px;
+        margin: 0 auto;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .footer-logo-and-nav {
+        height: 115px;
+        margin-left: 0px;
+    }
+
+    .contacts-container {
+        display: flex;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-menu {
+        display: none;
+    }
+
+    .footer-contacts {
+        width: 380px;
+        display: block;
+    }
+
+    .contacts-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-contacts-link {
+        width: 45px;
+        margin-bottom: 20px;
+    }
+
+    .address-wrapper {
+        width: 360px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .specificity-wrapper {
+        width: 380px;
+        height: auto;
+        margin: 0 auto;;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .specificity-card {
+        width: 380px;
+        grid-template-columns: 15px 25px 105px 190px auto;
+        grid-template-rows: 20px 45px auto;
+        justify-items: normal;
+        font-family: "Tektur", sans-serif;
+    }
+
+    .tooltip {
+        display: none;
+    }
+
+    .specificity-title {
+        grid-column: 2 / 3;
+    }
+
+    .info-specificity-card {
+        display: block;
+    }
+
+    .social-card {
+        width: 200px;
+        grid-template-columns: 15px 25px auto;
+        grid-template-rows: 20px 45px auto;
+        justify-items: normal;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header-wrapper {
+        width: 100%;
+    }
+
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: absolute;
+        left: -200px;
+        top: 60px;
+        transition: all 0, 4s;
+    }
+
+    .header-nav-active {
+        left: 30px;
+    }
+
+    .header-nav-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .request {
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        width: 80px;
+        height: 20px;
+        border-radius: 20px;
+        font-size: 8px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .burger-btn {
+        display: flex;
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-radius: 6px;
+        border: 1px solid rgba(248, 248, 248, 0.7);
+    }
+
+    .burger-span {
+        margin: 0;
+        padding: 0;
+        width: 18px;
+        height: 1px;
+        background-color: rgba(91, 91, 91, 0.7);
+
+        .wrapper-block {
+            width: 460px;
+        }
+    }
+
+    .btn-style {
+        width: 400px;
+    }
+
+    .search-style {
+        width: 325px;
+    }
+
+    .main-wrapper {
+        width: 460px;
+        justify-content: center;
+    }
+
+    .form_wrapper {
+        width: 300px;
+    }
+
+    .ul-block {
+        width: 400px;
+    }
+
+    .block-possition {
+        width: 460px;
+    }
+
+    .heading {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .submit_form {
+        align-items: center;
+    }
+
+    .callback_form_check_text {
+        text-align: center;
+    }
+
+    .bue-car-box {
+        width: 460px;
+    }
+
+    .bue-car-title {
+        max-width: 370px;
+        font-size: 24px;
+    }
+
+    .bue-car-step-one {
+        width: 360px;
+        max-height: 220px;
+        margin-bottom: 18px;
+    }
+
+    .bue-car-step-two {
+        width: 360px;
+        max-height: 220px;
+        margin-left: 0px;
+    }
+
+    .bue-car-step-three {
+        width: 360px;
+        max-height: 220px;
+        margin-bottom: 18px;
+    }
+
+    .bue-car-step-four {
+        width: 360px;
+        max-height: 220px;
+        margin-left: 0px;
+    }
+
+    .bue-car-step-five {
+        width: 360px;
+    }
+
+    .btn-request {
+        margin-top: 10px;
+        margin: 10px auto;
+    }
+
+    .benefit-section {
+        width: 450px;
+    }
+
+    .footer {
+        width: 460px;
+        margin: 0 auto;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .footer-menu {
+        display: none;
+    }
+
+    .footer-contacts {
+        width: 380px;
+        display: block;
+    }
+
+    .contacts-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-contacts-link {
+        width: 45px;
+        margin-bottom: 20px;
+    }
+
+    .adres-wrapper {
+        width: 350px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .specificity-wrapper {
+        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .specificity-card {
+        width: 380px;
+        grid-template-columns: 15px 25px 105px 190px auto;
+        grid-template-rows: 20px 45px auto;
+        justify-items: normal
+    }
+
+    .info-icon {
+        display: none;
+    }
+
+    .specificity-title {
+        grid-column: 2 / 3;
+    }
+
+    .info-specificity-card {
+        display: block;
+    }
+
+    .social-card {
+        margin-left: 0px;
+        width: 200px;
+    }
+}

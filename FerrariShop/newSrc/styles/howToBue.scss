@@ -1,0 +1,145 @@
+.bue-car-wrapper-box {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.bue-car-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bue-car-title {
+    width: 655px;
+    height: 88px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    text-align: center;
+    font-family: 'RussoOne', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.bue-car-step-one {
+    width: 325px;
+    height: 250px;
+    border: 1px solid #4F4F4F;
+    border-radius: 10px;
+}
+
+.bue-car-step-two {
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-bottom: 18px;
+    width: 560px;
+    height: 250px;
+    border: 1px solid #4F4F4F;
+    border-radius: 10px;
+}
+
+.bue-car-step-three {
+    width: 428px;
+    height: 250px;
+    border: 1px solid #4F4F4F;
+    border-radius: 10px;
+}
+
+.bue-car-step-four {
+    margin-right: 13px;
+    width: 548px;
+    height: 245px;
+    border: 1px solid #4F4F4F;
+    border-radius: 10px;
+}
+
+.bue-car-step-five {
+    width: 780px;
+    height: 245px;
+    border: 1px solid #4F4F4F;
+    border-radius: 10px;
+}
+
+.step-number {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: 'Tektur', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.step-title {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-family: 'RussoOne', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.step-text-font {
+    font-family: 'Jura', sans-serif;
+    font-weight: 500;
+}
+
+.step-text-one {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 300px;
+    font-size: 18px;
+}
+
+.step-text-two {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 365px;
+    font-size: 18px;
+}
+
+.step-text-three {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 375px;
+    font-size: 18px;
+}
+
+.step-text-four {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 442px;
+    font-size: 18px;
+}
+
+.step-text-five {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 327px;
+    font-size: 18px;
+}
+
+.btn-request-wrapper {
+    display: flex;
+    align-items: center;
+    transition: .2s linear;
+}
+
+.btn-request {
+    margin-left: 87px;
+    width: 285px;
+    height: 45px;
+    font-family: "Tektur", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #b1b0b0;
+    border-right-color: #4F4F4F;
+    border-bottom-color: #4F4F4F;
+    border-radius: 8px;
+    position: relative;
+    transition: .2s linear;
+    top: 0;
+    left: 0;
+}
+
+.btn-request:hover {
+    box-shadow: 2px 2px 2px white, 4px 4px 4px #e84242;
+    top: -2px;
+    left: -2px;
+}

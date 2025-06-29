@@ -1,0 +1,45 @@
+.service-container {
+  width: 100%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+};
+
+.service-wrapper {
+  display: block;
+  width: 50%;
+  overflow: hidden;
+}
+
+.service-photo {
+  position: relative;
+  width: inherit;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+};
+
+.service-photo:hover {
+  transform: scale(1.25);
+}
+
+.service-content {
+  position: absolute;
+  bottom: 20px;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 2;
+};
+
+.service-content p {
+  line-height: 1.15;
+  word-break: normal;
+  margin: 0;
+  width: 80%;
+  height: fit-content;
+}
+

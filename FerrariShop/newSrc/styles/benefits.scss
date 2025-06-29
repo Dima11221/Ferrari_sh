@@ -1,0 +1,95 @@
+.bg-img {
+    background-image: url('../images/card/bg-for-benefit.png');
+    border-radius: 30px;
+}
+
+.benefit-section {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 1340px;
+    height: 700px;
+}
+
+.bg-img {
+    background-image: url('../images/card/bg-for-benefit.png');
+    border-radius: 30px;
+}
+
+.benefit-cards {
+    margin-top: 350px;
+    width: 315px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #FFFFFFb3;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+
+.cards-title {
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 200px;
+    font-family: 'RussoOne', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.btn-detail-toggle {
+    display: none;
+    width: 22px;
+    height: 22px;
+    position: relative;
+    left: 300px;
+    bottom: 45px;
+}
+
+.open-module {
+    display: none;
+}
+
+.close-module {
+    display: none;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    width: 278px;
+    font-size: 14px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+}
+
+.cards-text {
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    width: 270px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    -webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+}
+
+.visible-text {
+    display: flex;
+}
+
+
+
+
+
+
+
+

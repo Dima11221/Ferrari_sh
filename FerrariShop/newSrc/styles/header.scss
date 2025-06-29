@@ -1,0 +1,119 @@
+.header {
+  position: relative;
+  background-color: transparent;
+  height: 60px;
+  display: flex;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.background-line {
+  position: absolute;
+  width: 100%;
+  height: 110px;
+  top: -26px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.34) 30%, rgba(0, 0, 0, 0.62) 60%, rgba(0, 0, 0, 0.91));
+}
+
+.header-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, rgba(255, 255, 255, 0), #e1eded, rgba(255, 255, 255, 0)) 80% 1%;
+}
+
+.logo_img {
+  position: relative;
+  height: 60px;
+}
+
+.header-nav {
+  display: flex;
+  max-width: 80%;
+  min-width: 40%;
+}
+
+.header-nav-list {
+  width: 100%;
+  display: flex;
+  flex-wrap:nowrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-inline-start: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.background-blur {
+  color: rgb(227, 255, 252);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid transparent;
+  position: relative;
+  transition: .2s linear;
+  top: 0;
+  left: 0;
+}
+
+.header-nav-list-item {
+  letter-spacing: 10%;
+  position: relative;
+  white-space: nowrap;
+}
+
+.background-blur:hover {
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.burger-btn {
+  display: none;
+
+}
+
+.banner {
+  position: relative;
+  margin-top: -120px;
+  min-height: 200px;
+}
+
+.video {
+  min-height: 200px;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+.request {
+  position: absolute;
+  right: 8%;
+  bottom: 10%;
+  width: 140px;
+  height: 36px;
+  background: transparent;
+  color: rgba(240, 248, 255, 0.76);
+  border: 1px solid rgba(240, 248, 255, 0.2);
+  border-radius: 20px;
+  font-family: "Jura", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 2;
+  animation: rainbow 2s linear 2s infinite;
+}
+
+@keyframes rainbow {
+  50% {background: #000}
+}
+
+.request:hover {
+  background-color: rgba(0, 0, 0, 0.600);
+
+}

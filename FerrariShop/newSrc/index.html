@@ -1,0 +1,427 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Jura:wght@300..700&family=Russo+One&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="../newSrc/images/icons/icon_ferrari.svg" />
+    <title>LuxAuto</title>
+</head>
+<body class="fr-color">
+<header class="header">
+    <div class="background-line"></div>
+    <div class="header-wrapper">
+        <a class="logo" href="./index.html"></a>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="background-blur"><a href="#katalog" class="header-nav-list-item">КАТАЛОГ</a></li>
+                <li class="background-blur"><a href="#service" class="header-nav-list-item">СЕРВИС</a></li>
+                <li class="background-blur"><a href="#about" class="header-nav-list-item">О НАС</a></li>
+            </ul>
+        </nav>
+
+        <button class="burger-btn">
+            <span class="burger-span"></span>
+            <span class="burger-span"></span>
+            <span class="burger-span"></span>
+        </button>
+
+    </div>
+</header>
+<div class='banner'>
+    <button class='request btn_callback_js' id="scroll_to_button">Оставить заявку</button>
+</div>
+
+<main>
+    <!-- Корзина -->
+    <button class="backet_click" id="backet" data-backet="0">
+        <img class="backet__image" src="./images/icons/backet_icon_2.svg" alt="backet" />
+    </button>
+
+    <div id="backet_Modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="backet_list">
+                <div class = 'heading flex-row'>
+                    <p>КОРЗИНА</p>
+                    <button class="clearCart">
+                        Удалить все
+                    </button>
+                </div>
+
+                <ol class="cart">
+
+                </ol>
+
+                <form class="contact flex-row form_validate_js">
+                    <label class="contact__fields ">
+                        <input class="search-style modal_input name_filled_js" placeholder="Имя...">
+                        <input class="modal_input search-style phone_filled_js" placeholder="Номер телефона...">
+                        <input class="search-style modal_input email_filled_js" placeholder="E-mail">
+                    </label>
+                    <div class="submit_form">
+                        <label class="callback_form_check">
+                            <input type="checkbox" name="agree"><p class="callback_form_check_text">Принимаю пользовательское соглашение <a class="user-agreement" href="#"></a></p>
+                        </label>
+                        <button class="contact_btn submit_btn_js">Оставить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper container flex-column">
+        <div class="wrapper-block container flex-column">
+            <h2 class="head-text-style">ВЫБЕРИТЕ СВОЙ АВТОМОБИЛЬ</h2>
+            <div class="wrapper-btns df-align-center-justify-between container">
+                <button class="btn-style open_filter_js">Указать параметры</button>
+<!--                <form class="form_wrapper filter_form_js flex-row">-->
+<!--                    <label for="">-->
+<!--                        <span>Цена</span>-->
+<!--                        <input class="input_style" name="price_min" type="text" placeholder="От" />-->
+<!--                        <input class="input_style" name="price_max" type="text" placeholder="До" />-->
+<!--                    </label>-->
+<!--                    <label for="new">-->
+<!--                        <input name="isNew" type="checkbox" id="new" checked />-->
+<!--                        <span>Новинка</span>-->
+<!--                    </label>-->
+<!--                    <label for="">-->
+<!--                        <span class="form_wrapper_engine">Двигатель</span>-->
+<!--                        <input class="input_style_engine" name="engine_min" type="text" placeholder="От" />-->
+<!--                        <input class="input_style_engine" name="engine_max" type="text" placeholder="До" />-->
+<!--                    </label>-->
+<!--                    <div>-->
+<!--                        <label for="full">-->
+<!--                            <input name="drive" type="radio" id="full" value="Полный" />-->
+<!--                            <span>Полный</span>-->
+<!--                        </label>-->
+<!--                        <label for="rear">-->
+<!--                            <input name="drive" type="radio" id="rear" value="Задний" />-->
+<!--                            <span>Задний</span>-->
+<!--                        </label>-->
+<!--                        <label for="all">-->
+<!--                            <input name="drive" type="radio" id="all" value="Все" checked />-->
+<!--                            <span>Все</span>-->
+<!--                        </label>-->
+<!--                    </div>-->
+<!--                    <button class="card_btn_filter" type="submit">Применить</button>-->
+<!--                </form>-->
+                <form class="form_wrapper form_wrapper_style filter_form_js">
+                    <div class="form_wrapper_style">
+                        <div class="form_wrapper_style_details">
+                            <label>
+                                <span>Цена:</span>
+                                <input class="input_style" name="price_min" type="text" placeholder="От" />
+                                <input class="input_style" name="price_max" type="text" placeholder="До" />
+                            </label>
+                            <label for="new">
+                                <input name="isNew" type="checkbox" id="new" checked />
+                                <span>Новинка</span>
+                            </label>
+                            <label >
+                                <span>Двигатель:</span>
+                                <input class="input_style_engine" name="engine_min" type="text" placeholder="От" />
+                                <input class="input_style_engine" name="engine_max" type="text" placeholder="До" />
+                            </label>
+                            <div>
+                                <label for="full">Привод:
+                                    <input class="" name="drive" type="radio" id="full" value="Полный" />
+                                    <span>Полный</span>
+                                </label>
+                                <label for="rear">
+                                    <input class="" name="drive" type="radio" id="rear" value="Задний" />
+                                    <span>Задний</span>
+                                </label>
+                                <label for="all">
+                                    <input class="" name="drive" type="radio" id="all" value="Все" checked />
+                                    <span>Все</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="card_btn_filter" type="submit">Применить</button>
+                    </div>
+                </form>
+            </div>
+            <nav class="container">
+                <ul class="ul-block list-reset df-align-center-justify-between">
+                    <li class="">
+                        <button
+                                class="btn-reset btn-list-style flex-column list-block type_body_js"
+                                value="Внедорожник"
+                        >
+                            <img
+                                    class="img-style"
+                                    src="./images/icons/SUV.svg"
+                                    alt="Внедорожник"
+                            />
+                            <span>Внедорожник</span>
+                        </button>
+                    </li>
+                    <li class="">
+                        <button class="btn-reset btn-list-style flex-column list-block type_body_js"
+                                value="Купе">
+                            <img class="img-style" src="./images/icons/Kupe.svg" alt="Купе" />
+                            <span>Купе</span>
+                        </button>
+                    </li>
+                    <li class="">
+                        <button
+                                class="btn-reset btn-list-style flex-column list-block type_body_js"
+                                value="Хэтчбек"
+                        >
+                            <img class="img-style" src="./images/icons/Hatch.svg" alt="Хэтчбек" />
+                            <span>Хэтчбек</span>
+                        </button>
+                    </li>
+                    <li class="">
+                        <button
+                                class="btn-reset btn-list-style flex-column list-block type_body_js"
+                                value="Кабриолет"
+                        >
+                            <img
+                                    class="img-style"
+                                    src="./images/icons/Convertible.svg"
+                                    alt="Кабриолет"
+                            />
+                            <span>Кабриолет</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn-reset btn-show-style type_body_js" id = 'katalog' value="Всё">
+                Показать все
+            </button>
+        </div>
+    </div>
+
+    <div class="main-wrapper container">
+        <div class="flex-column">
+            <h2 class="head-text-style wrapper-title">ГОРЯЧИЕ ПРЕДЛОЖЕНИЯ</h2>
+            <input type="text" class="search_js search-style wrapper-title" placeholder="Поможем подобрать вам авто..." />
+            <div
+                    class="auto-wrapper-js block-possition df-align-center-justify-between"
+            >
+            </div>
+        </div>
+        <div class="picture flex-column">
+            <picture>
+                <source srcset="./images/icons/1170x611.png" media="(max-width: 1366px)" />
+                <img src="./images/icons/1340x700.png" alt="picture" />
+            </picture>
+        </div>
+    </div>
+
+</main>
+
+
+
+<section class="bue-car-box container " id = 'service'>
+    <h2 class="bue-car-title">КАК КУПИТЬ АВТОМОБИЛЬ С ДОСТАВКОЙ В СТРАНЫ СНГ</h2>
+    <section class="bue-car-wrapper">
+        <div class="bue-car-step-one bue-car-card">
+            <p class="step-number">1</p>
+            <h3 class="step-title">ЗАЯВКА</h3>
+            <p class="step-text-one step-text-font">Вы звоните нам или оставляете заявку на сайте и с Вами связывается наш менеджер.</p>
+        </div>
+
+        <div class="bue-car-step-two bue-car-card">
+            <p class="step-number">2</p>
+            <h3 class="step-title">ДОГОВОР</h3>
+            <p class="step-text-two step-text-font">Согласовываем автомобиль, условия работы и подписываем договор. Вносите предоплату.</p>
+        </div>
+
+        <div class="bue-car-step-three bue-car-card">
+            <p class="step-number">3</p>
+            <h3 class="step-title">ОПЛАТА</h3>
+            <p class="step-text-three step-text-font">После подписания договора, выставляется инвойс за автомобиль.</p>
+        </div>
+
+        <div class="bue-car-step-four bue-car-card">
+            <p class="step-number">4</p>
+            <h3 class="step-title">ДОСТАВКА</h3>
+            <p class="step-text-four step-text-font">Ожидаете от 30 до 60 дней (зависит от страны и пункта назначения).</p>
+        </div>
+
+        <div class="bue-car-step-five bue-car-card">
+            <p class="step-number">5</p>
+            <h3 class="step-title">ОТПРАВИТЬ ЗАПРОС</h3>
+            <div class="btn-request-wrapper">
+                <p class="step-text-five step-text-font">Оставьте контактные данные и мы обязательно свяжемся с вами</p>
+                <button class="btn-request btn-reset btn_callback_js">ОСТАВИТЬ ЗАЯВКУ</button>
+            </div>
+        </div>
+    </section>
+</section>
+<!--<section class="service-container">-->
+<!--        <div class="service-wrapper">-->
+<!--            <img class = 'service-photo' src="./images/service/tsr1.jpg">-->
+<!--            <div class="service-content">-->
+<!--                <h3>7-ЛЕТНЯЯ ПРОГРАММА ТЕХНИЧЕСКОГО ОБСЛУЖИВАНИЯ</h3>-->
+<!--                <p>Программа плавного технического обслуживания Genuine Maintenace <br> действует в течение первых 7 лет службы вашего автомобиля.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="service-wrapper">-->
+<!--            <img class = 'service-photo' src="./images/service/tsr1.jpg">-->
+<!--            <div class="service-content">-->
+<!--                <h3>7-ЛЕТНЯЯ ПРОГРАММА ТЕХНИЧЕСКОГО ОБСЛУЖИВАНИЯ</h3>-->
+<!--                <p>Программа плавного технического обслуживания Genuine Maintenace <br> действует в течение первых 7 лет службы вашего автомобиля.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="service-wrapper">-->
+<!--            <img class = 'service-photo' src="./images/service/tsr1.jpg">-->
+<!--            <div class="service-content">-->
+<!--                <h3>7-ЛЕТНЯЯ ПРОГРАММА ТЕХНИЧЕСКОГО ОБСЛУЖИВАНИЯ</h3>-->
+<!--                <p>Программа плавного технического обслуживания Genuine Maintenace <br> действует в течение первых 7 лет службы вашего автомобиля.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="service-wrapper">-->
+<!--            <img class = 'service-photo' src="./images/service/tsr1.jpg">-->
+<!--            <div class="service-content">-->
+<!--                <h3>7-ЛЕТНЯЯ ПРОГРАММА ТЕХНИЧЕСКОГО ОБСЛУЖИВАНИЯ</h3>-->
+<!--                <p>Программа плавного технического обслуживания Genuine Maintenace <br> действует в течение первых 7 лет службы вашего автомобиля.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--</section>-->
+<div class="callback_form_position" id="target">
+    <form class="container callback form_wrapper form_validate_js callback_form_js callback-gr-wrapper">
+        <label class="grid-position-Name">
+            <input class="modal_input search-style name_filled_js" type="Name" placeholder="Имя...">
+        </label>
+        <label class="grid-position-Phone">
+            <input class="modal_input search-style phone_filled_js" type="Phone" placeholder="Номер телефона...">
+        </label>
+        <label class="grid-position-E-mail">
+            <input class="modal_input search-style email_filled_js" type="E-mail" placeholder="E-mail...">
+        </label>
+        <label class="grid-position-Comment">
+            <textarea class="Comment search-style" name="Comment" placeholder="Комментарий по желанию..." id=""></textarea>
+        </label>
+        <button class="btn-reset contact_btn grid-position-button submit_btn_js">Оставить заявку</button>
+        <label class="grid-position-check callback_form_check">
+            <input type="checkbox" name="agree"><p class="callback_form_check_text">Принимаю пользовательское соглашение <a class="user-agreement" href="#"></a></p>
+        </label>
+    </form>
+</div>
+<div class="benefit-section bg-img" id = 'about'>
+    <div id="cards" class="benefit-cards open-card">
+        <h3 class="cards-title">ПОКУПКА АВТОМОБИЛЯ</h3>
+        <button id="openCloseModule" class="btn-detail-toggle btn-reset">
+            <img id="openModule" class="open-module invisible-arrow" src="images/card/open-arrow.svg" alt="">
+            <img id="closeModule" class="close-module visible-arrow" src="images/card/close-arrow.svg" alt="">
+        </button>
+        <p id="cardText" class="cards-text visible-text">В нашем автосалоне можно приобрести новые машины. Также можно воспользоваться услугой подбора автомобиля с пробегом и заказа авто с аукционов США.</p>
+    </div>
+
+    <div id="cards1" class="benefit-cards open-card">
+        <h3 class="cards-title">ИНДИВИДУАЛЬНЫЙ ПОДХОД</h3>
+        <button id="openCloseModule1" class="btn-detail-toggle btn-reset">
+            <img id="openModule1" class="open-module invisible-arrow" src="images/card/open-arrow.svg" alt="">
+            <img id="closeModule1" class="close-module visible-arrow" src="images/card/close-arrow.svg" alt="">
+        </button>
+        <p id="cardText1" class="cards-text visible-text">В спектр наших услуг дополнительно входит продажа и индивидуальный подбор мототехники, квадроциклов, коммерческого транспорта специальной техники.</p>
+    </div>
+
+    <div id="cards2" class="benefit-cards open-card">
+        <h3 class="cards-title">ОПЫТ И НАДЕЖНОСТЬ</h3>
+        <button id="openCloseModule2" class="btn-detail-toggle btn-reset">
+            <img id="openModule2" class="open-module invisible-arrow" src="images/card/open-arrow.svg" alt="">
+            <img id="closeModule2" class="close-module visible-arrow" src="images/card/close-arrow.svg" alt="">
+        </button>
+        <p id="cardText2" class="cards-text visible-text">Более 9 лет безупречной успешной работы, за это время мы обслужили огромное количество корпоративных и частных клиентов.</p>
+    </div>
+
+    <div id="cards3" class="benefit-cards open-card">
+        <h3 class="cards-title">СОТРУДНИЧЕСТВО С НАМИ</h3>
+        <button id="openCloseModule3" class="btn-detail-toggle btn-reset">
+            <img id="openModule3" class="open-module invisible-arrow" src="images/card/open-arrow.svg" alt="">
+            <img id="closeModule3" class="close-module visible-arrow" src="images/card/close-arrow.svg" alt="">
+        </button>
+        <p id="cardText3" class="cards-text visible-text">Гарантия надежного партнерства, доступных цен и индивидуального подхода к каждому клиенту.</p>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-wrapper">
+        <div class="footer-logo-and-nav">
+            <a href="./index.html">
+                <img class="footer-logo" src="images/logo/logoBlack.png" alt="logo">
+            </a>
+            <nav>
+                <ul class="footer-menu list-reset">
+                    <li>
+                        <button class="footer-menu-btn btn-reset">КАТАЛОГ</button>
+                    </li>
+                    <li>
+                        <button class="footer-menu-btn btn-reset">СЕРВИС</button>
+                    </li>
+                    <li>
+                        <button class="footer-menu-btn btn-reset">О НАС</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="contacts-container">
+            <div class="footer-contacts">
+                <div class="contacts-wrapper">
+                    <div class="num-wrapper">
+                        <p class="contact-text">Связаться с нами:</p>
+                        <a class="contact-phone" href="tel:+71234567890">+7 (123) 456-78-90</a>
+                    </div>
+                    <a class="footer-icon-link" href="https://web.whatsapp.com/">
+                        <img class="footer-contacts-link" src="images/footer/nngu-logo.svg" alt="nngu"/>
+                    </a>
+                    <a href="https://web.telegram.org/k/" target="_blank">
+                        <img class="footer-contacts-link" src="images/footer/telegram-icon.svg" alt="telegram"/>
+                    </a>
+                </div>
+            </div>
+            <div class="address-wrapper">
+                <p class="address-text">Наш адрес:</p>
+                <p class="address-text">Нижегородская обл., г.Нижний Новгород, ул.Пушкина, д.69</p>
+            </div>
+        </div>
+    </div>
+    <div class="specificity-wrapper">
+        <div class="specificity-card">
+            <img class="footer-card-img" src="images/footer/invoice.svg" alt="">
+            <h3 class="specificity-title">INVOICE</h3>
+            <span class="tooltip">
+                    <img class="tooltip-icon" src="images/footer/info.svg" alt="">
+                    <span class="tooltip-text">После подписания договора, выставляем инвойс на оплату, по реквизитам автосалона.</span>
+                </span>
+            <p class="info-specificity-card">После подписания договора, выставляем инвойс на оплату, по реквизитам автосалона.</p>
+        </div>
+
+
+        <div class="specificity-card">
+            <img class="footer-card-img" src="images/footer/usdt.svg" alt="">
+            <h3 class="specificity-title">USDT</h3>
+            <span class="tooltip">
+                    <img class="tooltip-icon" src="images/footer/info.svg" alt="">
+                    <span class="tooltip-text">Возможность оплаты автомобиля с помощью цифровой валюты.</span>
+                </span>
+            <p class="info-specificity-card">Возможность оплаты автомобиля с помощью цифровой валюты.</p>
+        </div>
+
+        <div class="specificity-card">
+            <img class="footer-card-img" src="images/footer/cash.svg" alt="">
+            <h3 class="specificity-title">CASH</h3>
+            <span class="tooltip">
+                    <img class="tooltip-icon" src="images/footer/info.svg" alt="">
+                    <span class="tooltip-text">Возможность оплаты наличной валютой.</span>
+                </span>
+            <p class="info-specificity-card">Возможность оплаты наличной валютой.</p>
+        </div>
+
+        <div id="socialCsard" class="social-card specificity-card">
+            <img class="footer-card-img" src="images/footer/github-icon.svg" alt="">
+            <h3 class="specificity-title">GITHUB</h3>
+        </div>
+    </div>
+</footer>
+
+<script src="./script/index.js"></script>
+</body>
+</html>
